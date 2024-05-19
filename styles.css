@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #d61c50;
+}
+.head {
+    font-family: 'lemon', sans-serif;
+    margin: 2rem; 
+    text-align: center;
+    font-size: 3rem;
+    color: transparent;
+    animation: flow 2.5s linear 0s infinite alternate both running, zoom 1s ease-in 0s 1 normal forwards running;
+    background-image: url(https://i0.wp.com/drawingsof.com/wp-content/uploads/2022/12/BluePurple.png?fit=1500%2C1500&ssl=1);
+    background-position: center;
+    background-clip: text;
+    user-select: none;
+    cursor: pointer;
+}
+@keyframes zoom {
+    from {
+        scale: 0.5;
+    } to {
+        scale: 1;
+    }
+}
+@keyframes flow {
+    0% {
+        transform: translateX(0) translateY(7px);
+    }
+    25% {
+        transform: translateX(7px) translateY(0);
+    }
+    50% {
+        transform: translateX(0) translateY(7px);
+    }
+    75% {
+        transform: translateX(-7px) translateY(0);
+    }
+    100% {
+        transform: translateX(0) translateY(7px);
+    }
+}
+.container {
+    width: 100vw; margin: 3rem auto;
+    display: flex; flex-flow: row wrap; justify-content: space-evenly;
+}
+.box {
+    width: 30vw; 
+    text-align: center;
+    padding: 2.5rem 3.5rem;
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: rgba(0,0,0,0.8) 0 0 45px inset;
+    border: 4px solid black;
+    border-radius: 30%/60%;
+    font-family: 'Lobster', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    transition: all 1s ease-in-out 0s;
+}
+.auth::selection, .text::selection {
+    background-color: #d61c50;
+    color: white;
+}
+.box:hover {
+    scale: 1.1;
+}
+.auth {
+    margin: 1rem 2rem 0;
+    text-align: right;
+}
+.ref {
+    display: block;
+    margin: 2rem auto; padding: 1rem;
+    background-color: rgb(32, 180, 32);
+    border: 3px solid currentColor;
+    border-radius: 30%/60%;
+    color: white;
+    box-shadow: rgba(255,255,255, 0.7) 0 5px, rgba(255,255,255, 0.4) 0 10px, 
+    rgba(255,255,255, 0.1) 0 15px;
+    font-size: 2.2rem; font-weight: 700;
+    font-family: 'Salsa', system-ui;
+    cursor: pointer;
+}
+.ref:active {
+    box-shadow: rgba(255,255,255,0.9) 0 5px;
+    transform: translateY(5px);
+}
+@media only screen and (min-width:600px) and (max-width: 900px) {
+    .box {
+        width: 80vw;
+    }
+}
+@media only screen and (max-width:600px) {
+    .box {
+        width: 90vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
